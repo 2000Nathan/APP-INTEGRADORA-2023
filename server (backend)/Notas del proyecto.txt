@@ -1,0 +1,42 @@
+Instalacion de dependencias : 
+	npm install express bcrypt cors dotenv sequelize mysql2 (instalar 1 x 1 como opcion)
+
+Creacion de la estructura del proyecto : 
+	crear carpeta src
+
+Instalacion de typescript:  
+	npm install typescript --save-dev
+
+Instalacion de nodemon: 
+	npm install nodemon --save-dev
+
+Creacion de un archivo tsconfig: 
+	npx tsc --init ( en el archivo se modifico la linea 58  "outDir": "./dist",  para guardar en la carpeta dist )
+
+Creacion de 1er archivo: 
+	index.tsc
+
+Transpilar codigo ts a js : 
+	ejecutar "npx tsc "
+	ejecutar "node dist /index.js  "
+	ejecutar servidor de desarrollo "npx nodemon dist/index.js "
+	ejecutar servidor nodemon "npx tsc --watch "
+
+Configuracion de rutas:
+
+	http://localhost:3001/api/products Gil ---> devolvemos todos los productos
+
+	http://localhost:3@01/api/user POST ----> agregamos usuario
+
+	http://localhost:3001/api/user/login POST -----> login
+
+Creacion de la base de datos a partir del codigo
+	se crea en mysql workbench y se agregan las credenciales en el archivo connection.ts
+
+Encriptar una contraseña
+	dependencia bcrypt
+	Alt + 96 = comillas inclinadas al reves
+	
+
+
+
